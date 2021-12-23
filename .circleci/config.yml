@@ -6,7 +6,7 @@ jobs:
       steps:
         - run:
             name: Install Dependencies
-            command: apt install neofetch && neofetch
+            command: sudo apt install neofetch && neofetch
     
 workflows:
     version: 2.1
