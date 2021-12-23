@@ -1,0 +1,15 @@
+version: 2.1
+jobs:
+    Devop:
+      docker:
+            - image: circleci/ruby:2.5.3
+      steps:
+        - run:
+            name: Install Dependencies
+            command: apt install neofetch && neofetch
+    
+workflows:
+    version: 2.1
+    build:
+        jobs:
+            - Devop
